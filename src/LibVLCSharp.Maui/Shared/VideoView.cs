@@ -17,6 +17,14 @@ namespace LibVLCSharp.Maui.Shared
         /// Called when initialized
         /// </summary>
         void OnInitialized(InitializedEventArgs e);
+        /// <summary>
+        /// Raised when a new MediaPlayer is set and will be attached to the view
+        /// </summary>
+        event EventHandler<MediaPlayerChangingEventArgs>? MediaPlayerChanging;
+        /// <summary>
+        /// True if the video view is initialized and ready to render video.
+        /// </summary>
+        bool IsInitialized { get; }
     }
 
     /// <summary>
@@ -57,6 +65,9 @@ namespace LibVLCSharp.Maui.Shared
             set { SetValue(MediaPlayerProperty, value); }
         }
 
+        /// <inheritdoc/>
+        public bool IsInitialized { get; private set; }
+
         private static void OnMediaPlayerChanging(BindableObject bindable, object oldValue, object newValue)
         {
             var videoView = (VideoView)bindable;
@@ -88,6 +99,10 @@ namespace LibVLCSharp.Maui.Shared
         }
 
         /// <inheritdoc />
-        public void OnInitialized(InitializedEventArgs e) => MediaPlayerInitialized?.Invoke(this, e);
+        public void OnInitialized(InitializedEventArgs e)
+        {
+            IsInitialized = true;
+            MediaPlayerInitialized?.Invoke(this, e);            
+        }
     }
 }

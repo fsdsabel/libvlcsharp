@@ -10,7 +10,7 @@ namespace LibVLCSharp.Platforms.Windows
         /// <summary>
         /// Occurs when the <see cref="VideoView"/> is fully loaded and the <see cref="VideoViewBase.SwapChainOptions"/> property is set
         /// </summary>
-        public event EventHandler<TInitializedEventArgs>? Initialized;
+        public Action<TInitializedEventArgs>? Initialized;
 
         /// <summary>
         /// Creates args for <see cref="Initialized"/> event
@@ -23,7 +23,7 @@ namespace LibVLCSharp.Platforms.Windows
         /// </summary>
         protected override void OnInitialized()
         {
-            Initialized?.Invoke(this, CreateInitializedEventArgs());
+            Initialized?.Invoke(CreateInitializedEventArgs());
         }
     }
 }

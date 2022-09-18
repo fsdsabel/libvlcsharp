@@ -22,7 +22,7 @@ namespace LibVLCSharp.Maui.Handlers
             if (handler.PlatformView != null)
             {
                 handler.PlatformView.MediaPlayer = videoView.MediaPlayer;
-                handler.PlatformView.Initialized += (s, e) => videoView.OnInitialized(e);
+                handler.PlatformView.Initialized = e => videoView.OnInitialized(e);
             }
         }
     }

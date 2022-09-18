@@ -40,7 +40,7 @@ namespace LibVLCSharp.Maui.Sample
 
         public void Initialize(InitializedEventArgs e)
         {
-            LibVLC = new LibVLC(enableDebugLogs: true, e.SwapChainOptions);
+            LibVLC = new LibVLC(enableDebugLogs: false, e.SwapChainOptions);
             var media = new Media(LibVLC, new Uri("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"));
 
             MediaPlayer = new LibVLCSharp.Shared.MediaPlayer(LibVLC)
@@ -49,6 +49,9 @@ namespace LibVLCSharp.Maui.Sample
             };
 
             media.Dispose();
+
+            IsVideoViewInitialized = true;
+            Play();
         }
 
         public void OnAppearing()
@@ -65,8 +68,7 @@ namespace LibVLCSharp.Maui.Sample
 
         public void OnVideoViewInitialized()
         {
-            IsVideoViewInitialized = true;
-            Play();
+           
         }
 
         private void Play()

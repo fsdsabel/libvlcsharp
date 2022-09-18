@@ -5,15 +5,12 @@ using Microsoft.UI.Xaml.Controls;
 using DirectN;
 using DesignMode = Windows.ApplicationModel.DesignMode;
 using Constants = DirectN.Constants;
-using Window = Microsoft.UI.Xaml.Window;
-using Application = Microsoft.Maui.Controls.Application;
-using Microsoft.Maui.LifecycleEvents;
 
 namespace LibVLCSharp.Platforms.Windows
 {
     static class ComExtensions
     {
-        public static unsafe IntPtr NativePointer<T>(this T obj)
+        public static IntPtr NativePointer<T>(this T obj)
         {
             if (obj == null)
                 return IntPtr.Zero;
