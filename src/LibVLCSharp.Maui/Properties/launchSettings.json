@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LibVLCSharp.Maui": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
