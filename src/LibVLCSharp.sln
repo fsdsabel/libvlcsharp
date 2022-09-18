@@ -97,7 +97,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibVLCSharp.Eto.Sample", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibVLCSharp.Maui", "LibVLCSharp.Maui\LibVLCSharp.Maui.csproj", "{C957370C-669A-40F5-B42B-7900F01D2AD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibVLCSharp.Maui.Sample", "..\samples\LibVLCSharp.Maui.Sample\LibVLCSharp.Maui.Sample.csproj", "{84B7D8B3-AC86-42E5-A1D1-40F275CF6B5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibVLCSharp.Maui.Sample", "..\samples\LibVLCSharp.Maui.Sample\LibVLCSharp.Maui.Sample.csproj", "{84B7D8B3-AC86-42E5-A1D1-40F275CF6B5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -492,7 +492,6 @@ Global
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|ARM64.Deploy.0 = Debug|Any CPU
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{C77C28DD-A2B2-403C-A907-76184BD5D11E}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
@@ -1682,7 +1681,6 @@ Global
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|ARM64.Deploy.0 = Debug|Any CPU
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{315BB606-A490-4CFB-8DFC-313563C330AE}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
